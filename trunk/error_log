@@ -1,0 +1,12 @@
+[21-Dec-2016 17:49:11 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 55
+[21-Dec-2016 17:49:15 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 55
+[21-Dec-2016 17:49:53 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 56
+[21-Dec-2016 21:35:08 UTC] PHP Fatal error:  Call to undefined function tribe_get_location() in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[21-Dec-2016 21:41:58 UTC] PHP Parse error:  syntax error, unexpected '$event_id' (T_VARIABLE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[21-Dec-2016 21:42:01 UTC] PHP Parse error:  syntax error, unexpected '$event_id' (T_VARIABLE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[21-Dec-2016 21:42:10 UTC] PHP Parse error:  syntax error, unexpected '$event_id' (T_VARIABLE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[21-Dec-2016 21:42:12 UTC] PHP Parse error:  syntax error, unexpected '$event_id' (T_VARIABLE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[21-Dec-2016 21:42:29 UTC] PHP Parse error:  syntax error, unexpected '$event_id' (T_VARIABLE) in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/templates-pages/page-home.php on line 41
+[26-Dec-2016 16:19:49 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/index.php on line 12
+[26-Dec-2016 16:19:54 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/index.php on line 12
+[26-Dec-2016 16:19:56 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/roxannel/public_html/respect/wp-content/themes/Bootstrap-for-WordPress/index.php on line 12
