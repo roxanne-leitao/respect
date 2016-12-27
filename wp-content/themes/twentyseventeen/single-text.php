@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="wrap text single-page">
+<div class="wrap text single-page <?php echo "hello world!"; ?>">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
