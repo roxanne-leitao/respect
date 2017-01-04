@@ -50,9 +50,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
 
 html {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -95,7 +96,7 @@ hr {
 }
 
 pre {
-	font-family: monospace, monospace;
+	/*font-family: monospace, monospace;*/
 	font-size: 1em;
 }
 
@@ -183,7 +184,7 @@ input,
 optgroup,
 select,
 textarea {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
@@ -416,8 +417,8 @@ button,
 input,
 select,
 textarea {
-	color: #333;
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	color: #141414;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -501,16 +502,21 @@ i {
 }
 
 blockquote {
-	color: #666;
-	font-size: 18px;
-	font-size: 1.125rem;
+	color: #141414;
+	font-size: 16px;
 	font-style: italic;
-	line-height: 1.7;
+	line-height: 1.8;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
+	border-left: 3px solid #43B073;
+	padding-left: 20px;
+	width: 80%;
+	margin: 40px 0 50px;
 }
-
+blockquote p {
+	margin-bottom: 0;
+}
 blockquote cite {
 	display: block;
 	font-style: normal;
@@ -1310,8 +1316,8 @@ a:hover .nav-title,
 }
 
 .navigation-top .wrap {
-	max-width: 1000px;
-	padding: 0;
+	/*max-width: 1000px;
+	padding: 0;*/
 }
 
 .navigation-top a {
@@ -1487,6 +1493,14 @@ a:hover .nav-title,
 	display: none;
 }
 
+/* BREADCRUMB */
+.breadcrumbs li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 12px;
+}
+
 /*--------------------------------------------------------------
 13.0 Layout
 --------------------------------------------------------------*/
@@ -1519,9 +1533,9 @@ body {
 .wrap {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 700px;
+	/*max-width: 700px;
 	padding-left: 2em;
-	padding-right: 2em;
+	padding-right: 2em;*/
 }
 
 .wrap:after {
@@ -1888,12 +1902,13 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .page .panel-content .entry-title,
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
-	color: #222;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 800;
-	letter-spacing: 0.14em;
+	color: #43B073;
+	font-size: 38px;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+	line-height: 1.1em;
 	text-transform: uppercase;
+	/*max-width: 65%;*/
 }
 
 .entry-header .entry-title {
@@ -2036,7 +2051,8 @@ body:not(.twentyseventeen-front-page) #comments {
 }
 
 body:not(.twentyseventeen-front-page) .entry-header {
-	padding-top: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .blog .entry-meta a.post-edit-link,
@@ -2243,6 +2259,18 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .nav-links .nav-next .nav-title .nav-title-icon-wrapper {
 	margin-left: 0.5em;
+}
+
+/* Highlight Box */
+
+div.call-out-box {
+	background-color: rgba(202, 247, 222, 0.43);
+	padding: 20px;
+}
+
+div.call-out-box h2 {
+	color: #43B073;
+	text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
@@ -3263,9 +3291,8 @@ object {
 	input,
 	select,
 	textarea {
-		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.5;
+		font-size: 15px;
+		line-height: 1.8;
 	}
 
 	.entry-content blockquote.alignleft,
@@ -3277,11 +3304,83 @@ object {
 	/* Layout */
 
 	.wrap {
-		max-width: 1000px;
+		/*max-width: 1000px;
 		padding-left: 3em;
-		padding-right: 3em;
+		padding-right: 3em;*/
+		width: 100%;
+		padding-left: 5em;
+		display: inline-block;
 	}
-
+	.wrap.text.single-page {
+		width: 60%;
+	}
+	#side-bar {
+		width: 230px;		
+		padding-left: 2em;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#side-bar a.button.sidebar img {
+		height: 25px;
+		width: auto;
+	}
+	#side-bar a.button.sidebar {
+		display: block;
+		background-color: #141414;
+		color: #fff;
+		padding: 20px 0px;
+		text-align: center;
+	}
+	#side-bar a.button.sidebar.membership {
+		margin-bottom: 5px;
+	}
+	#side-bar a.button.sidebar.donation {
+		margin-bottom: 15px;
+	}
+	#side-bar div.event {
+		border: 2px solid;
+		padding: 30px 20px;
+		margin-top:5px;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	
+	#side-bar div.event.perpetrators {
+		border-color: #43B073;
+		
+	}
+	#side-bar div.event.male-victims {
+		border-color: #3ABEEF;
+	}
+	#side-bar div.event.young-people {
+		border-color: #F9B233;
+	}
+	date span {
+		float: left;
+		vertical-align: top;
+		line-height: 0.7em;
+	}
+	span.day {
+		font-size: 44px;
+	}
+	span.month, span.year {
+		font-size: 15px;
+		width: 60%;
+		margin-left: 5px;
+	}
+	span.month {
+		margin-bottom: 10px;
+	}
+	#side-bar h4 {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+	#side-bar div.event address {
+		font-size: 10px;
+		line-height: 1em;
+		margin-bottom: 0;
+	}
 	.has-sidebar:not(.error404) #primary {
 		float: left;
 		width: 58%;
@@ -3386,9 +3485,9 @@ object {
 	}
 
 	.navigation-top .wrap {
-		max-width: 1000px;
+		/*max-width: 1000px;*/
 		/* The font size is 14px here and we need 50px padding in ems */
-		padding: 0.75em 3.4166666666667em;
+		/*padding: 0.75em 3.4166666666667em;*/
 	}
 
 	.navigation-top nav {
@@ -3707,7 +3806,7 @@ object {
 	/* Posts */
 
 	.site-content {
-		padding: 5.5em 0 0;
+		padding: 6em 0 0;
 	}
 
 	.single-post .entry-title,
@@ -3746,15 +3845,15 @@ object {
 		width: 32px;
 	}
 
-	body:not(.has-sidebar):not(.page-one-column) .page-header,
+	/*body:not(.has-sidebar):not(.page-one-column) .page-header,
 	body.has-sidebar.error404 #primary .page-header,
 	body.page-two-column:not(.archive) #primary .entry-header,
 	body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
 		float: left;
 		width: 36%;
-	}
+	}*/
 
-	.blog:not(.has-sidebar) #primary article,
+	/*.blog:not(.has-sidebar) #primary article,
 	.archive:not(.page-one-column):not(.has-sidebar) #primary article,
 	.search:not(.has-sidebar) #primary article,
 	.error404:not(.has-sidebar) #primary .page-content,
@@ -3763,7 +3862,7 @@ object {
 	body.page-two-column #comments {
 		float: right;
 		width: 58%;
-	}
+	}*/
 
 	.blog .site-main > article,
 	.archive .site-main > article,
@@ -4001,7 +4100,7 @@ object {
 
 	/* Navigation */
 	.navigation-top .wrap {
-		padding: 0.75em 2em;
+		/*padding: 0.75em 2em;*/
 	}
 
 	.navigation-top nav {

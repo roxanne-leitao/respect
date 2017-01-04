@@ -4,11 +4,12 @@
  */
 
 get_header(); ?>
+<?php get_template_part( 'custom-sidebar', 'page' ); ?>
 
-<div class="wrap text single-page">
+<div class="wrap text single-page <?php echo "hello world!"; ?>">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<div class="breadcrumb"><?php custom_breadcrumbs(); ?></div>
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -21,9 +22,12 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
-
+			<div class="call-out-box">
+				<?php $box = get_field('contact_box'); if ($box){ echo $box; }?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- .wrap -->
+
 
 <?php get_footer();
